@@ -1,0 +1,10 @@
+INSERT INTO `high_score` (`name`, `time`) VALUES ('Ernst', '122');
+INSERT INTO `high_score` (`name`, `time`) VALUES ('Lise', '43423');
+INSERT INTO `high_score` (`name`, `time`) VALUES ('Vidar', '3');
+INSERT INTO `high_score` (`name`, `time`) VALUES ('Woo', '532');
+INSERT INTO `high_score` (`name`, `time`) VALUES ('Kamil', '75425');
+INSERT INTO `high_score` (`name`, `time`) VALUES ('Slavek', '12');
+INSERT INTO `high_score` (`name`, `time`) VALUES ('Aaban', '9080304');
+INSERT INTO `high_score` (`name`, `time`) VALUES ('Arif', '1234');
+INSERT INTO `high_score` (`name`, `time`) VALUES ('Haidar', '84328490');
+INSERT INTO `high_score` (`name`, `time`) VALUES ('Olga', '280');
