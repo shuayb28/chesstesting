@@ -1,23 +1,22 @@
-
 var ruteListe = document.getElementsByClassName("square");
 
 for(var i = 0; i < ruteListe.length; i++){
-    ruteListe[i].addEventListener("click", flyttBrikke);
+    ruteListe[i].addEventListener("click", movePiece);
 }
 
 
-var harKlikketEnGang = false;
+var haveClickedOnce = false;
 
-var brikkeViSkalTaVarePaa = "";
+var pieceWeWillTakeCareof = "";
 
-function flyttBrikke(e) {
-    if(harKlikketEnGang){
-        e.target.innerHTML = brikkeViSkalTaVarePaa;
-        harKlikketEnGang = false;
+function movePiece(e) {
+    if(haveClickedOnce){
+        e.target.innerHTML = pieceWeWillTakeCareof;
+        haveClickedOnce = false;
     }
     else {
-        brikkeViSkalTaVarePaa = e.target.innerHTML;
-        harKlikketEnGang = true;
+        pieceWeWillTakeCareof = e.target.innerHTML;
+        haveClickedOnce = true;
     }
 
     console.log(e.target.innerHTML)
@@ -27,6 +26,21 @@ function flyttBrikke(e) {
 
 
 
+
+
+
+
+// turn = w;
+// turn = b;
+
+// function side() {
+//    return turn;
+// }
+// function setTurn(newTurn) {
+//     turn = newTurn;
+// }
+// game.setTurn(b);
+// game.setTurn(w);
 
 
 

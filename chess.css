@@ -34,27 +34,7 @@ body {
       vertical-align:middle;
       cursor: move;
   }
-
-  #highscoreOmraade {
-    width: 300px;
-    border: 1px black solid;
-    float: top;
-
-}
-#lagreScoreOmraade {
-    width: 300px;
-    height: 400px;
-    border: 1px black solid;
-    float: bottom;
-}
-
-.content {
-    padding: 5px;
-    margin: 5px;
-    border-radius: 3px;
-}
-#right{
-    float: right;
-    padding-right: 20px;
-    margin-right: 20px;
+.img {
+    height: 20px;
+    width: 20px;
 }

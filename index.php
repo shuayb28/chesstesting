@@ -1,62 +1,26 @@
+
+<?php
+    session_start();
+    if(!isset($_SESSION['username'])){
+        header('location: login.php');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chess-game</title>
     <link rel="stylesheet" href="chess.css">
 </head>
 <body>
-    <form method="post">
-        <table>
-            <h1>Registration</h1>
-            <tr>
-                <td>
-                    Name :
-                </td>
-                <td>
-                    <input type="text" placeholder="Name" name="pame" id="name">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Password :
-                </td>
-                <td>
-                    <input type="password" placeholder="Password" name="password" id="password">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Gender :
-                </td>
-                <td>
-                    <input type="radio" name="gender" value="male">Male
-                    <input type="radio" name="gender" value="female">Female
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="submit" value="submit" name="">
-                </td>
-            </tr>
-        </table>
-    </form>
-    <div id="right">
-    <div id="highscoreOmraade" class="content">
-            <h2>Her er de ti beste resultatene, straight from your DB:</h2>
-            <?php
-                include('php/showTopTen.php');
-           ?>
+    <div class="welcome">
+        <h1>Hei <?php echo $_SESSION['username'] ?>
+</div>
 
-        </div>
-        <div id="lagreScoreOmraade" class="content">
-           <?php
-                include('php/lagreScore.php');
-           ?>
-        </div>
-    </div>
+    
     <div class="chessboard">
         <!-- 1st -->
         <div id="a1" class="white square">&#9820;</div>
@@ -131,7 +95,6 @@
         <div id="h7" class="black square">&#9816;</div>
         <div id="h8" class="white square">&#9814;</div>
         </div>
-        
     <script src="chess.js"></script>
 </body>
 </html>
